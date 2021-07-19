@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
   
 }
 .container{
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
   
 }
@@ -53,7 +54,7 @@ h4{
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  height: 75px;
   
 
 }
@@ -88,16 +89,10 @@ aside{
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 20px;
+  
 }
-/* footer p{
-  font-size: 16px;
-} */
 
-/* article header p {
-  font-style: italic;
-} */
 nav a:link{
   font-weight: bold;
   display: inline-block;
@@ -131,6 +126,7 @@ nav{
 
 .related{
   list-style: none;
+  margin-left: 0;
 }
 
 
@@ -206,4 +202,50 @@ h2::after{
   position: absolute;
   top: -15px;
   right: -25px;
+}
+
+/*-------------------------------------------
+                   FLOATS
+--------------------------------------*/
+.author-img{
+  float: left;
+  margin-bottom: 20px;
+}
+.author{
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1{
+  float: left;
+}
+
+nav{
+  float: right;
+}
+
+/* .clear{
+  clear: both;
+} */
+
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+article{
+  width: 800px;
+  float: left;
+}
+
+aside{
+  width: 350px;
+  float: right;
+
+}
+
+footer{
+  clear: both;
 }

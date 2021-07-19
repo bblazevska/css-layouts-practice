@@ -27,7 +27,7 @@ h2, h3 , button, .shipping{
 h2{
   text-align: center;
   background-color: #ece9e9;
-  height: 60px;
+  height: 70px;
   padding: 20px 0;
   position: relative;
   
@@ -49,24 +49,28 @@ h2::before{
 h3{
   margin: 20px 0 15px;
 }
-.main-img{
+
+/* .main-img{
   width: 270px;
   float: left;
-}
+} */
+
 .product-info{
-  width: 300px;
-  float: left;
-  margin-left: 50px;
+  /* width: 300px;
+  float: left; 
+  margin-left: 50px;*/
   margin-top: 30px;
 }
-.price-shipping{
-  width: 300px;
+
+/* .price-shipping{
+  width: 300px; 
   margin-bottom: 20px;
-}
+} */
+
 #price{
   font-size: 25px;
   margin: 0;
-  float: left;
+  /* float: left; */
 }
 
 .shipping{
@@ -74,19 +78,19 @@ h3{
   color: #ddd9d9;
   font-size: 15px;
   margin-bottom: 20px;
-  float: right;
+  /* float: right; */
 }
 
-.price-shipping::after{
+/* .price-shipping::after{
   clear: both;
   content: '';
   display: block;
-}
+} */
 
 .details{
-  width: 300px;
-  float: left;
-  margin-left: 60px;
+  /* width: 300px;
+  float: left; 
+  margin-left: 60px;*/
   margin-top: 10px;
 }
 
@@ -156,4 +160,29 @@ li{
 
 .c-brown{
   background-color: #49240f;
+}
+
+/*------------- Flex box -------*/
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  
+}
+
+.product-info{
+  /* margin-left: 30px; */
+  flex: 1;
+}
+
+.details{
+  /* margin-left: 20px; */
+  flex: 1;
+}
+
+.price-shipping{
+  display: flex;
+  
+  justify-content: space-between;
 }
